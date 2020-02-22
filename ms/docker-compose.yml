@@ -1,0 +1,31 @@
+version: '2.1'
+
+services:
+  heroes:
+    container_name: heroes-service
+    build: ./heroes/
+    volumes:
+      - './heroes:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '8081:8081' # expose ports - HOST:CONTAINER
+    networks:
+      - default
+      - backend
+    depends_on:
+      threats:
+        condition: service_started
+    links:
+      - threats
+
+  threats:
+    container_name: threats-service
+    build: ./threats/
+    volumes:
+      - './threats:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '8082:8082' # expose ports - HOST:CONTAINER
+networks:
+  backend:
+    external: true
