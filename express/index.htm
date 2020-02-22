@@ -1,0 +1,26 @@
+<html>
+   <body>
+      
+      <!-- <form action = "http://127.0.0.1:8880/process_post" method = "POST">
+         First Name: <input type = "text" name = "first_name"> <br>
+         Last Name: <input type = "text" name = "last_name">
+         <input type = "submit" value = "Submit">
+      </form> -->
+
+      <br/>
+      <br/>
+      
+      <h3>File Upload:</h3>
+      Select a file to upload: <br />
+      
+      <form action = "http://127.0.0.1:8880/file_upload" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type="file" name="inputfilename" size="500" />
+         <br />
+         <input type = "submit" value = "Upload File" />
+      </form>
+
+
+
+   </body>
+</html>
