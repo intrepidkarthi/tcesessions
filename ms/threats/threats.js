@@ -28,7 +28,7 @@ const threats = [
    {
        id: 3,
        displayName: 'John will not understand the joke',
-       necessaryPowers: ['clairvoyance'],
+       necessaryPowers: ['mind reading'],
        img: 'joke.png',
        assignedHero: 0
    }
