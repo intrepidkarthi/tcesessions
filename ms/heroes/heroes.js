@@ -17,34 +17,34 @@ const powers = [
 const heroes = [
    {
        id: 1,
-       type: 'spider-dog',
-       displayName: 'Cooper',
+       type: 'flying-machine',
+       displayName: 'Iron man',
        powers: [1, 4],
-       img: 'cooper.jpg',
+       img: 'ironman.png',
        busy: false
    },
    {
        id: 2,
-       type: 'flying-dogs',
-       displayName: 'Jack & Buddy',
+       type: 'combat-attack',
+       displayName: 'Black widow',
        powers: [2, 5],
-       img: 'jack_buddy.jpg',
+       img: 'blackwidow.png',
        busy: false
    },
    {
        id: 3,
-       type: 'dark-light-side',
-       displayName: 'Max & Charlie',
+       type: 'green-light-side',
+       displayName: 'Green lantern',
        powers: [3, 2],
-       img: 'max_charlie.jpg',
+       img: 'greenlantern.png',
        busy: false
    },
    {
        id: 4,
-       type: 'captain-dog',
-       displayName: 'Rocky',
+       type: 'spider-dog',
+       displayName: 'Spiderman',
        powers: [1, 5],
-       img: 'rocky.jpg',
+       img: 'spiderman.png',
        busy: false
    }
 ];
